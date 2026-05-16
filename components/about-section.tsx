@@ -51,7 +51,9 @@ export default function AboutSection() {
           </p>
 
           <button className="mt-8 bg-[#14361d] text-white px-7 py-4 rounded-full hover:scale-105 transition flex items-center gap-5">
+          <a href="/contact" className="flex items-center gap-5">
             Learn More <img src="/leaf.png" className="w-8" alt="" />
+            </a>
           </button>
         </motion.div>
 

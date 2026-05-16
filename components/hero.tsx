@@ -36,9 +36,12 @@ export default function Hero() {
           Finest tea leaves sourced from premium gardens and crafted with love.
         </p>
 
-        <button className="mt-10 bg-[#0d3b20] hover:bg-[#174f2e] transition px-8 py-4 rounded-full text-white text-lg shadow-2xl flex items-center gap-5">
+        <button className="mt-10 bg-[#0d3b20] hover:bg-[#174f2e] transition px-8 py-4 rounded-full text-white text-lg shadow-2xl ">
+          <a href="#teas" className="flex items-center gap-5">
+
           Discover Our Teas{" "}
           <Image width={8} height={8} src="/leaf.png" className="w-8" alt="" />
+          </a>
         </button>
       </motion.div>
     </section>

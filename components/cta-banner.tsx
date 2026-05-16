@@ -19,7 +19,9 @@ export default function CTABanner() {
         </p>
 
         <button className="mt-10 bg-[#14361d] text-white px-8 py-4 rounded-full font-semibold hover:scale-105 transition flex items-center gap-5">
+          <a href="/contact" className="flex items-center gap-5">
           Shop Now <img src="/leaf.png" className="w-8" alt="" />
+          </a>
         </button>
       </div>
     </section>
