@@ -2,12 +2,18 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
+import {
+  motion,
+  AnimatePresence,
+  useScroll,
+  useMotionValueEvent,
+} from "framer-motion";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/#about" },
+  { label: "About", href: "/about" },
   { label: "Our Teas", href: "/#teas" },
   { label: "Contact Us", href: "/contact" },
 ];
@@ -16,6 +22,7 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const { scrollY } = useScroll();
+  const pathname = usePathname();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     setScrolled(latest > 40);
@@ -68,9 +75,11 @@ export default function Navbar() {
                   key={link.label}
                   href={link.href}
                   className={`relative px-4 py-2 text-sm font-medium rounded-xl transition-colors duration-300 group ${
-                    scrolled
-                      ? "text-white/75 hover:text-white hover:bg-white/10"
-                      : "text-[#14361d] hover:text-[#14361d] hover:bg-[#14361d]/8"
+                    pathname === "/about"
+                      ? "text-white hover:text-white hover:bg-white/10"
+                      : scrolled
+                        ? "text-white/75 hover:text-white hover:bg-white/10"
+                        : "text-[#14361d] hover:text-[#14361d] hover:bg-[#14361d]/8"
                   }`}
                   style={{ fontFamily: "sans-serif" }}
                 >
@@ -115,12 +124,18 @@ export default function Navbar() {
                 className={`block w-5 h-px transition-colors duration-300 ${scrolled ? "bg-white" : "bg-[#14361d]"}`}
               />
               <motion.span
-                animate={menuOpen ? { opacity: 0, scaleX: 0 } : { opacity: 1, scaleX: 1 }}
+                animate={
+                  menuOpen
+                    ? { opacity: 0, scaleX: 0 }
+                    : { opacity: 1, scaleX: 1 }
+                }
                 transition={{ duration: 0.2 }}
                 className={`block w-5 h-px transition-colors duration-300 ${scrolled ? "bg-white" : "bg-[#14361d]"}`}
               />
               <motion.span
-                animate={menuOpen ? { rotate: -45, y: -8 } : { rotate: 0, y: 0 }}
+                animate={
+                  menuOpen ? { rotate: -45, y: -8 } : { rotate: 0, y: 0 }
+                }
                 transition={{ duration: 0.25 }}
                 className={`block w-5 h-px transition-colors duration-300 ${scrolled ? "bg-white" : "bg-[#14361d]"}`}
               />
@@ -170,7 +185,9 @@ export default function Navbar() {
                       style={{ fontFamily: "sans-serif", fontSize: "15px" }}
                     >
                       <span>{link.label}</span>
-                      <span className="text-[#a3c98b]/40 group-hover:text-[#a3c98b] transition-colors duration-200 text-xs">→</span>
+                      <span className="text-[#a3c98b]/40 group-hover:text-[#a3c98b] transition-colors duration-200 text-xs">
+                        →
+                      </span>
                     </Link>
                   </motion.div>
                 ))}
