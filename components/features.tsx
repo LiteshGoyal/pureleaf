@@ -94,7 +94,7 @@ export default function FeaturesBanner() {
             className="uppercase tracking-[5px] text-[#a3c98b] text-[10px]"
             style={{ fontFamily: "sans-serif" }}
           >
-            Why PureLeafTea Co.
+            Why Pure Leaf Tea Co.
           </p>
         </motion.div>
 
