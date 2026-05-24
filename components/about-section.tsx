@@ -72,7 +72,7 @@ export default function AboutSection() {
         >
           <span className="block w-8 h-px bg-[#285533]" />
           <p className="uppercase tracking-[6px] text-[#285533] text-xs font-semibold" style={{ fontFamily: "sans-serif" }}>
-            About PureLeaf
+            About PureLeafTea Co.
           </p>
         </motion.div>
 

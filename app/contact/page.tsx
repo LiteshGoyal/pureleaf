@@ -7,6 +7,7 @@ import {
   Phone,
   Mail,
   MapPin,
+  Facebook,
 } from "lucide-react";
 import Image from "next/image";
 
@@ -45,7 +46,7 @@ export default function ContactPage() {
                 <div>
                   <p className="text-gray-500">Phone Number</p>
                   <h3 className="text-2xl font-semibold text-[#14361d]">
-                    +91 8000490059
+                    80 0049 0059
                   </h3>
                 </div>
               </div>
@@ -67,7 +68,6 @@ export default function ContactPage() {
               {/* INSTAGRAM */}
               <div className="flex items-center gap-5">
                 <div className="w-16 h-16 rounded-full bg-[#14361d] text-white flex items-center justify-center">
-                  {/* <Instagram size={28} /> */}
                   <Image alt="insta" src="/instagram.png" width={28} height={28} />
                 </div>
 
@@ -80,20 +80,38 @@ export default function ContactPage() {
                   </h3>
                 </div>
               </div>
-
-              {/* LOCATION */}
+              {/* Facebook */}
               <div className="flex items-center gap-5">
                 <div className="w-16 h-16 rounded-full bg-[#14361d] text-white flex items-center justify-center">
-                  <MapPin size={28} />
+                  <Image alt="fb" className="text-white" src="/logofb1.png" width={35} height={35} />
                 </div>
 
                 <div>
-                  <p className="text-gray-500">Location</p>
+                  <p className="text-gray-500">Facebook</p>
                   <h3 className="text-2xl font-semibold text-[#14361d]">
-                    Rajpura, India
+                    <a href="https://www.facebook.com/share/1BikXNiFmP/">
+                      Pure Leaf Tea Co.
+                    </a>
                   </h3>
                 </div>
               </div>
+              {/* Youtube */}
+              <div className="flex items-center gap-5">
+                <div className="w-16 h-16 rounded-full bg-[#14361d] text-white flex items-center justify-center">
+                  <Image alt="fb" className="text-white" src="/youtubelogo.png" width={40} height={40} />
+                </div>
+
+                <div>
+                  <p className="text-gray-500">Youtube</p>
+                  <h3 className="text-2xl font-semibold text-[#14361d]">
+                    <a href="https://youtube.com/@pureleafteaco?si=3TFKplb_bfAUrJOT">
+                      PureLeafTeaCo
+                    </a>
+                  </h3>
+                </div>
+              </div>
+
+              
             </div>
           </motion.div>
           <img

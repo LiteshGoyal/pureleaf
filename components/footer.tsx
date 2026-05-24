@@ -46,7 +46,7 @@ export default function Footer() {
         style={{ fontSize: "clamp(60px, 12vw, 160px)", fontFamily: "serif", letterSpacing: "-0.04em" }}
         aria-hidden
       >
-        PureLeaf
+        PureLeafTea
       </div>
 
       {/* ── Top divider line ── */}
@@ -73,7 +73,7 @@ export default function Footer() {
             />
 
             <p className="mt-5 text-white/50 leading-7 text-sm max-w-xs" style={{ fontFamily: "sans-serif" }}>
-              PureLeaf is more than just tea — it's a lifestyle of freshness,
+              PureLeafTea is more than just tea — it's a lifestyle of freshness,
               purity, and mindful living brewed into every cup.
             </p>
 

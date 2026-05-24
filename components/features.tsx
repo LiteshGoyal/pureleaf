@@ -66,7 +66,7 @@ export default function FeaturesBanner() {
           className="text-white whitespace-nowrap"
           style={{ fontSize: "clamp(80px, 18vw, 200px)", fontFamily: "serif", letterSpacing: "-0.04em" }}
         >
-          PureLeaf
+          PureLeafTea
         </span>
       </motion.div>
 
@@ -94,7 +94,7 @@ export default function FeaturesBanner() {
             className="uppercase tracking-[5px] text-[#a3c98b] text-[10px]"
             style={{ fontFamily: "sans-serif" }}
           >
-            Why PureLeaf
+            Why PureLeafTea Co.
           </p>
         </motion.div>
 
