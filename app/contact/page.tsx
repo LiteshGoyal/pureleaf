@@ -6,8 +6,6 @@ import {
   //   Instagram,
   Phone,
   Mail,
-  MapPin,
-  Facebook,
 } from "lucide-react";
 import Image from "next/image";
 
