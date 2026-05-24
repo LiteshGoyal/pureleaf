@@ -16,7 +16,11 @@ const useInView = (threshold = 0.15) => {
   return [ref, inView];
 };
 
-const useCountUp = (target, duration = 2000, start = false) => {
+const useCountUp = (
+  target: number,
+  duration: number = 2000,
+  start: boolean = false
+) => {
   const [count, setCount] = useState(0);
   useEffect(() => {
     if (!start) return;
