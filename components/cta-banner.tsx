@@ -143,7 +143,7 @@ export default function CTABanner() {
 
             {/* Ghost secondary CTA */}
             <a
-              href="/about"
+              href="/about-us"
               className="inline-flex items-center gap-2 text-white/70 text-sm border border-white/20 px-7 py-4 rounded-full hover:bg-white/10 hover:border-white/40 hover:text-white transition-all duration-300"
               style={{ fontFamily: "sans-serif" }}
             >

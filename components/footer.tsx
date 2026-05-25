@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const quickLinks = [
   { label: "Home", href: "/" },
-  { label: "About", href: "#about" },
+  { label: "About Us", href: "/about-us" },
   { label: "Teas", href: "#teas" },
   { label: "Contact", href: "/contact" },
 ];

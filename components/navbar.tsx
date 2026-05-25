@@ -13,7 +13,7 @@ import { usePathname } from "next/navigation";
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
+  { label: "About Us", href: "/about-us" },
   { label: "Our Teas", href: "/#teas" },
   { label: "Contact Us", href: "/contact" },
 ];
@@ -75,7 +75,7 @@ export default function Navbar() {
                   key={link.label}
                   href={link.href}
                   className={`relative px-4 py-2 text-sm font-medium rounded-xl transition-colors duration-300 group ${
-                    pathname === "/about"
+                    pathname === "/about-us"
                       ? "text-white hover:text-white hover:bg-white/10"
                       : scrolled
                         ? "text-white/75 hover:text-white hover:bg-white/10"
