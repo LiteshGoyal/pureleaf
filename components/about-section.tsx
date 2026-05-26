@@ -227,7 +227,7 @@ export default function AboutSection() {
                 ))}
               </div>
               <p className="text-gray-500 text-xs" style={{ fontFamily: "sans-serif" }}>
-                Trusted by <strong className="text-[#14361d]">12,000+</strong> tea lovers worldwide
+                Trusted by <strong className="text-[#14361d]">5.3Cr+</strong> tea lovers worldwide
               </p>
             </motion.div>
           </motion.div>

@@ -7,7 +7,7 @@ import { useRef } from "react";
 const stats = [
   { value: "100%", label: "Natural" },
   { value: "25+", label: "Yrs of Craft" },
-  { value: "12K+", label: "Happy Sippers" },
+  { value: "5.3Cr+", label: "Happy Sippers" },
 ];
 
 export default function Hero() {

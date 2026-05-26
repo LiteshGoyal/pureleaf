@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const stats = [
-  { value: "12K+", label: "Happy Customers" },
+  { value: "5.3Cr+", label: "Happy Customers" },
   { value: "25+", label: "Years of Craft" },
   { value: "100%", label: "Natural Leaves" },
 ];

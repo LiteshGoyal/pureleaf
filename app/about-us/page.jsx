@@ -88,38 +88,38 @@ function Leaf({ style = {}, opacity = 0.12, rotate = 0, size = 80 }) {
 }
 
 // ─── Tea steam SVG animation ──────────────────────────────────────────────────
-function SteamCup() {
-  return (
-    <div style={{ display: "flex", justifyContent: "center", marginBottom: "2rem" }}>
-      <svg width="100" height="120" viewBox="0 0 100 120" fill="none">
-        <style>{`
-          @keyframes steam1 { 0%,100%{transform:translateY(0) scaleX(1);opacity:0.7} 50%{transform:translateY(-14px) scaleX(1.3);opacity:0} }
-          @keyframes steam2 { 0%,100%{transform:translateY(0) scaleX(1);opacity:0.6} 50%{transform:translateY(-18px) scaleX(0.8);opacity:0} }
-          @keyframes steam3 { 0%,100%{transform:translateY(0) scaleX(1);opacity:0.5} 50%{transform:translateY(-12px) scaleX(1.2);opacity:0} }
-          .s1{animation:steam1 2s ease-in-out infinite;}
-          .s2{animation:steam2 2.4s ease-in-out 0.4s infinite;}
-          .s3{animation:steam3 1.8s ease-in-out 0.8s infinite;}
-        `}</style>
-        {/* Steam */}
-        <path className="s1" d="M35 32 Q32 24 35 16" stroke="#c8750a" strokeWidth="2.5" strokeLinecap="round" fill="none" />
-        <path className="s2" d="M50 28 Q47 20 50 12" stroke="#c8750a" strokeWidth="2.5" strokeLinecap="round" fill="none" />
-        <path className="s3" d="M65 32 Q62 24 65 16" stroke="#c8750a" strokeWidth="2.5" strokeLinecap="round" fill="none" />
-        {/* Cup */}
-        <path d="M18 44 L28 90 H72 L82 44 Z" fill="#3a6b2a" />
-        <rect x="18" y="40" width="64" height="8" rx="4" fill="#2d5422" />
-        {/* Saucer */}
-        <ellipse cx="50" cy="96" rx="36" ry="7" fill="#2d5422" />
-        <ellipse cx="50" cy="94" rx="36" ry="7" fill="#3a6b2a" />
-        {/* Tea surface */}
-        <ellipse cx="50" cy="49" rx="28" ry="6" fill="#a05c10" />
-        {/* Handle */}
-        <path d="M82 52 Q96 52 96 62 Q96 72 82 72" stroke="#2d5422" strokeWidth="5" fill="none" strokeLinecap="round" />
-        {/* Brand text */}
-        <text x="50" y="73" textAnchor="middle" fontSize="9" fontFamily="serif" fill="#fff" fontWeight="bold">Pure Leaf</text>
-      </svg>
-    </div>
-  );
-}
+// function SteamCup() {
+//   return (
+//     <div style={{ display: "flex", justifyContent: "center", marginBottom: "2rem" }}>
+//       <svg width="100" height="120" viewBox="0 0 100 120" fill="none">
+//         <style>{`
+//           @keyframes steam1 { 0%,100%{transform:translateY(0) scaleX(1);opacity:0.7} 50%{transform:translateY(-14px) scaleX(1.3);opacity:0} }
+//           @keyframes steam2 { 0%,100%{transform:translateY(0) scaleX(1);opacity:0.6} 50%{transform:translateY(-18px) scaleX(0.8);opacity:0} }
+//           @keyframes steam3 { 0%,100%{transform:translateY(0) scaleX(1);opacity:0.5} 50%{transform:translateY(-12px) scaleX(1.2);opacity:0} }
+//           .s1{animation:steam1 2s ease-in-out infinite;}
+//           .s2{animation:steam2 2.4s ease-in-out 0.4s infinite;}
+//           .s3{animation:steam3 1.8s ease-in-out 0.8s infinite;}
+//         `}</style>
+//         {/* Steam */}
+//         <path className="s1" d="M35 32 Q32 24 35 16" stroke="#c8750a" strokeWidth="2.5" strokeLinecap="round" fill="none" />
+//         <path className="s2" d="M50 28 Q47 20 50 12" stroke="#c8750a" strokeWidth="2.5" strokeLinecap="round" fill="none" />
+//         <path className="s3" d="M65 32 Q62 24 65 16" stroke="#c8750a" strokeWidth="2.5" strokeLinecap="round" fill="none" />
+//         {/* Cup */}
+//         <path d="M18 44 L28 90 H72 L82 44 Z" fill="#3a6b2a" />
+//         <rect x="18" y="40" width="64" height="8" rx="4" fill="#2d5422" />
+//         {/* Saucer */}
+//         <ellipse cx="50" cy="96" rx="36" ry="7" fill="#2d5422" />
+//         <ellipse cx="50" cy="94" rx="36" ry="7" fill="#3a6b2a" />
+//         {/* Tea surface */}
+//         <ellipse cx="50" cy="49" rx="28" ry="6" fill="#a05c10" />
+//         {/* Handle */}
+//         <path d="M82 52 Q96 52 96 62 Q96 72 82 72" stroke="#2d5422" strokeWidth="5" fill="none" strokeLinecap="round" />
+//         {/* Brand text */}
+//         <text x="50" y="73" textAnchor="middle" fontSize="9" fontFamily="serif" fill="#fff" fontWeight="bold">Pure Leaf</text>
+//       </svg>
+//     </div>
+//   );
+// }
 
 // ─── Stats card ───────────────────────────────────────────────────────────────
 function StatCard({ number, suffix, label, delay }) {
@@ -241,7 +241,7 @@ export default function AboutPage() {
           animation: fadeSlideDown 0.9s ease 0.35s both;
           position: relative;
         }
-        .hero-title-green { color: #5a9e3a; }
+        .hero-title-green { color: #a0c83e; }
         .hero-title-amber { color: #e8930d; font-style: italic; }
         .hero-divider {
           width: 80px; height: 3px;
@@ -299,7 +299,6 @@ export default function AboutPage() {
 
         /* ── Divider band ── */
         .band {
-          background: linear-gradient(135deg, #1a2f0e 0%, #162808 50%, #1c3210 100%);
           border-top: 1px solid rgba(58,107,42,0.2);
           border-bottom: 1px solid rgba(58,107,42,0.2);
           padding: 4rem 1.5rem;
@@ -417,7 +416,7 @@ export default function AboutPage() {
       <main className="about-root">
 
         {/* ════ HERO ════ */}
-        <section className="hero">
+        <section className="hero ">
           <div className="hero-bg" />
           <div className="hero-noise" />
 
@@ -440,12 +439,9 @@ export default function AboutPage() {
 
           {/* Hero content */}
           <div style={{ position: "relative", zIndex: 1 }}>
-            <SteamCup />
-            <div className="hero-badge">
-              <span>🌿</span> Est. 2001 — Bathinda, Punjab
-            </div>
+            {/* <SteamCup /> */}
             <h1 className="hero-title">
-              <span className="hero-title-green">Pure Leaf</span><br />
+              <span className="hero-title-green text-[#a0c83e]">Pure Leaf</span><br />
               <span className="hero-title-amber">Tea Co.</span>
             </h1>
             <div className="hero-divider" />
@@ -491,7 +487,7 @@ export default function AboutPage() {
         </section>
 
         {/* ════ STATS BAND ════ */}
-        <div className="band">
+        <div className="band bg-[#062d18]">
           <div className="band-inner">
             <RevealSection>
               <p style={{ textAlign: "center", marginBottom: "2.5rem", color: "#8a7b67", fontSize: "0.8rem", letterSpacing: "0.15em", textTransform: "uppercase" }}>
@@ -608,9 +604,9 @@ export default function AboutPage() {
         <section className="tagline-section">
           <RevealSection>
             <div style={{ fontSize: "3rem", marginBottom: "1rem", lineHeight: 1 }}>☕</div>
-            <p className="tagline-big">&ldquo; Har Cup Mein Swaad! &rdquo;</p>
-            <p className="tagline-meaning">Taste in Every Cup</p>
-            <div style={{
+            {/* <p className="tagline-big">&ldquo; Har Cup Mein Swaad! &rdquo;</p>
+            <p className="tagline-meaning">Taste in Every Cup</p> */}
+            {/* <div style={{
               marginTop: "2.5rem",
               display: "inline-block",
               background: "rgba(200,117,10,0.12)",
@@ -623,7 +619,9 @@ export default function AboutPage() {
               color: "#e8930d",
             }}>
               Pure Leaf Tea Co. — Est. 2001
-            </div>
+            </div> */}
+            
+            <p className="tagline-hero">&ldquo; Har Cup Mein Swaad! &rdquo;</p>
           </RevealSection>
         </section>
 

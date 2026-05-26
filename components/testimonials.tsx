@@ -555,7 +555,7 @@ export default function Testimonials() {
               marginBottom: 20,
             }}
           >
-            Join over 12,000 tea lovers who found their ritual
+            Join over 5.3Cr tea lovers who found their ritual
           </p>
           <motion.button
             whileHover={{ y: -3, boxShadow: "0 8px 24px rgba(20,54,29,0.22)" }}
